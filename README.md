@@ -12,4 +12,4 @@ Say you have some sample json, `{ "tags" : []}`, and the below class definition.
         List<String> tags();
     }
 
-Even though the json field `tags` is an empty array, the output object of `ResponseResult` from gson will be null instead of an empty list. Issue is demonstrated in the test, `ImmutableBugTest#testObjectParsing`.
+Even though the json field `tags` is an empty array, the output object of `ResponseResult` from gson will have a null `tags` field instead of an empty list. Issue is demonstrated in the test, `ImmutableBugTest#testObjectParsing`.
