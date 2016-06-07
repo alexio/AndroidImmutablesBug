@@ -3,8 +3,7 @@ Sample repo to demonstrate bug in Immutables project. https://github.com/immutab
 
 # Bug
 
-Say you have some sample json, `{ "tags" : []}`
-And note the class definition below.
+Say you have some sample json, `{ "tags" : []}`, and the below class definition.
 
 @Value.Immutable
 @Gson.TypeAdapters
