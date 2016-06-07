@@ -32,7 +32,7 @@ public class ImmutableBugTest {
         assertNotNull(response);
         assertNotNull(response.status());
         assertNotNull(response.results());
-        assertEquals("Results one object", 1, response.results().size());
+        assertEquals("Results has one object", 1, response.results().size());
         assertNotNull("Tags should not be null", response.results().get(0).tags());
         assertTrue(response.results().get(0).tags().isEmpty());
     }
